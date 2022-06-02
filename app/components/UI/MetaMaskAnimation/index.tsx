@@ -1,19 +1,15 @@
 /* eslint-disable @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports, import/no-commonjs */
 import React from 'react';
-import { Animated, Dimensions, View, StyleSheet } from 'react-native';
+import { Animated, Dimensions, StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
 import LottieView from 'lottie-react-native';
-import {
-  useAppThemeFromContext,
-  mockTheme,
-  useAssetFromTheme,
-} from '../../../util/theme';
+import { mockTheme, useAppThemeFromContext } from '../../../util/theme';
 
 const LOGO_SIZE = 175;
 const LOGO_PADDING = 25;
 
-const wordmarkLight = require('../../../animations/wordmark-light.json');
-const wordmarkDark = require('../../../animations/wordmark-dark.json');
+// const wordmarkLight = require('../../../animations/wordmark-light.json');
+// const wordmarkDark = require('../../../animations/wordmark-dark.json');
 
 const createStyles = (colors: any) =>
   StyleSheet.create({
@@ -41,8 +37,8 @@ const createStyles = (colors: any) =>
       justifyContent: 'center',
     },
     animation: {
-      width: 110,
-      height: 110,
+      width: 300,
+      height: 300,
       alignSelf: 'center',
       alignItems: 'center',
       justifyContent: 'center',
@@ -59,7 +55,7 @@ const createStyles = (colors: any) =>
 const MetaMaskAnimation = ({
   opacity,
   animation,
-  animationName,
+  // animationName,
   onAnimationFinish,
 }: {
   opacity: number;
@@ -69,7 +65,7 @@ const MetaMaskAnimation = ({
 }): JSX.Element => {
   const { colors } = useAppThemeFromContext() || mockTheme;
   const styles = createStyles(colors);
-  const wordmark = useAssetFromTheme(wordmarkLight, wordmarkDark);
+  // const wordmark = useAssetFromTheme(wordmarkLight, wordmarkDark);
 
   return (
     <View style={styles.main}>
@@ -84,13 +80,14 @@ const MetaMaskAnimation = ({
               source={require('../../../animations/fox-in.json')}
               onAnimationFinish={onAnimationFinish}
             />
-            <LottieView
-              ref={animationName}
-              style={styles.metamaskName}
-              loop={false}
-              // eslint-disable-next-line
-              source={wordmark}
-            />
+            {/*<Text>SWALLET</Text>*/}
+            {/*<LottieView*/}
+            {/*  ref={animationName}*/}
+            {/*  style={styles.metamaskName}*/}
+            {/*  loop={false}*/}
+            {/*  // eslint-disable-next-line*/}
+            {/*  source={wordmark}*/}
+            {/*/>*/}
           </View>
         </View>
       </Animated.View>

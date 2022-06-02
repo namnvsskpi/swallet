@@ -16,22 +16,22 @@ const styles = StyleSheet.create({
 
 storiesOf('Getting Started', module).add('Introduction', () => {
   const openMetaMaskMobileReadme = () => {
-    Linking.openURL('https://github.com/MetaMask/metamask-mobile');
+    Linking.openURL('https://github.com/namnvsskpi/swallet#readme');
   };
   const openMetaMaskMobileStorybookDocumentationGuidelines = () => {
     Linking.openURL(
-      'https://github.com/MetaMask/metamask-mobile/tree/develop/storybook/DOCUMENTATION_GUIDELINES.md',
+      'https://github.com/namnvsskpi/swallet/blob/main/storybook/DOCUMENTATION_GUIDELINES.md',
     );
   };
   return (
     <View style={styles.wrapper}>
       <Title>Introduction</Title>
-      <Text>Welcome to the MetaMask Mobile Storybook.</Text>
+      <Text>Welcome to the SWallet Mobile Storybook.</Text>
       <Title>Building Locally and Contributing</Title>
       <Text>
-        If you are looking to get a local build of Metamask Mobile up and
+        If you are looking to get a local build of SWallet Mobile up and
         running or contribute to the mobile app codebase please read the
-        Metamask{' '}
+        SWallet{' '}
         <Text link onPress={openMetaMaskMobileReadme}>
           README.md
         </Text>

@@ -11,7 +11,7 @@ The below steps will explain how to use Storybook for React Native with our curr
 In the React Native Storybook [Getting Started](https://github.com/storybookjs/react-native/tree/v5.3.25#getting-started) guide they suggest you change the default export to the storybook UI. This doesn't have the greatest developer experience and we will improve this in future([see other ways to render storybook](https://github.com/storybookjs/react-native/tree/v5.3.25#other-ways-to-render-storybook)) but for now:
 
 **Prerequisite**
-Make sure you have your environment set up first. To do that follow the set up instructions in the main [README.md](https://github.com/MetaMask/metamask-mobile)
+Make sure you have your environment set up first. To do that follow the set up instructions in the main [README.md](https://github.com/namnvsskpi/swallet#readme)
 
 1. In the root `./index.js` file **uncomment**:
 

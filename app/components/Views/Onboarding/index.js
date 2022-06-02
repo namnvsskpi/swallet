@@ -2,21 +2,21 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import {
   ActivityIndicator,
-  BackHandler,
-  Text,
-  View,
-  ScrollView,
-  StyleSheet,
   Alert,
+  BackHandler,
   Image,
   InteractionManager,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
 } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import StyledButton from '../../UI/StyledButton';
 import {
-  fontStyles,
   baseStyles,
   colors as importedColors,
+  fontStyles,
 } from '../../../styles/common';
 import OnboardingScreenWithBg from '../../UI/OnboardingScreenWithBg';
 import { strings } from '../../../../locales/i18n';
@@ -39,12 +39,11 @@ import ElevatedView from 'react-native-elevated-view';
 import { loadingSet, loadingUnset } from '../../../actions/user';
 import PreventScreenshot from '../../../core/PreventScreenshot';
 import WarningExistingUserModal from '../../UI/WarningExistingUserModal';
-import { PREVIOUS_SCREEN, ONBOARDING } from '../../../constants/navigation';
+import { ONBOARDING, PREVIOUS_SCREEN } from '../../../constants/navigation';
 import { EXISTING_USER, METRICS_OPT_IN } from '../../../constants/storage';
 import AnalyticsV2 from '../../../util/analyticsV2';
 import DefaultPreference from 'react-native-default-preference';
-import { ThemeContext, mockTheme } from '../../../util/theme';
-import AnimatedFox from 'react-native-animated-fox';
+import { mockTheme, ThemeContext } from '../../../util/theme';
 
 const PUB_KEY = process.env.MM_PUBNUB_PUB_KEY;
 
@@ -494,15 +493,11 @@ class Onboarding extends PureComponent {
             <View style={styles.wrapper}>
               {loading && (
                 <View style={styles.foxWrapper}>
-                  {Device.isAndroid() ? (
-                    <Image
-                      source={require('../../../images/fox.png')}
-                      style={styles.image}
-                      resizeMethod={'auto'}
-                    />
-                  ) : (
-                    <AnimatedFox bgColor={colors.background.default} />
-                  )}
+                  <Image
+                    source={require('../../../images/fox.png')}
+                    style={styles.image}
+                    resizeMethod={'auto'}
+                  />
                 </View>
               )}
               {loading ? this.renderLoader() : this.renderContent()}

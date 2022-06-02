@@ -1,18 +1,18 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import {
-  KeyboardAvoidingView,
-  Switch,
   ActivityIndicator,
   Alert,
-  Text,
-  View,
-  TextInput,
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
   Image,
   InteractionManager,
+  KeyboardAvoidingView,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Switch,
+  Text,
+  TextInput,
+  View,
 } from 'react-native';
 // eslint-disable-next-line import/no-unresolved
 import CheckBox from '@react-native-community/checkbox';
@@ -29,9 +29,9 @@ import StyledButton from '../../UI/StyledButton';
 import Engine from '../../../core/Engine';
 import Device from '../../../util/device';
 import {
-  fontStyles,
   baseStyles,
   colors as importedColors,
+  fontStyles,
 } from '../../../styles/common';
 import { strings } from '../../../../locales/i18n';
 import { getNavigationOptionsTitle } from '../../UI/Navbar';
@@ -42,9 +42,9 @@ import zxcvbn from 'zxcvbn';
 import Logger from '../../../util/Logger';
 import { ONBOARDING, PREVIOUS_SCREEN } from '../../../constants/navigation';
 import {
+  BIOMETRY_CHOICE_DISABLED,
   EXISTING_USER,
   TRUE,
-  BIOMETRY_CHOICE_DISABLED,
 } from '../../../constants/storage';
 import {
   getPasswordStrengthWord,
@@ -52,15 +52,14 @@ import {
 } from '../../../util/password';
 import NotificationManager from '../../../core/NotificationManager';
 import { syncPrefs } from '../../../util/sync';
-import { ThemeContext, mockTheme } from '../../../util/theme';
-import AnimatedFox from 'react-native-animated-fox';
+import { mockTheme, ThemeContext } from '../../../util/theme';
 import {
-  CREATE_PASSWORD_CONTAINER_ID,
-  CREATE_PASSWORD_INPUT_BOX_ID,
-  CONFIRM_PASSWORD_INPUT_BOX_ID,
-  IOS_I_UNDERSTAND_BUTTON_ID,
   ANDROID_I_UNDERSTAND_BUTTON_ID,
   CONFIRM_CHANGE_PASSWORD_INPUT_BOX_ID,
+  CONFIRM_PASSWORD_INPUT_BOX_ID,
+  CREATE_PASSWORD_CONTAINER_ID,
+  CREATE_PASSWORD_INPUT_BOX_ID,
+  IOS_I_UNDERSTAND_BUTTON_ID,
 } from '../../../constants/test-ids';
 
 const createStyles = (colors) =>
@@ -735,15 +734,11 @@ class ResetPassword extends PureComponent {
         {loading ? (
           <View style={styles.loadingWrapper}>
             <View style={styles.foxWrapper}>
-              {Device.isAndroid() ? (
-                <Image
-                  source={require('../../../images/fox.png')}
-                  style={styles.image}
-                  resizeMethod={'auto'}
-                />
-              ) : (
-                <AnimatedFox bgColor={colors.background.default} />
-              )}
+              <Image
+                source={require('../../../images/fox.png')}
+                style={styles.image}
+                resizeMethod={'auto'}
+              />
             </View>
             <ActivityIndicator size="large" color={colors.icon.default} />
             <Text style={styles.title}>

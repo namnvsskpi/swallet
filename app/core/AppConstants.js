@@ -78,13 +78,11 @@ export default {
   },
   MAX_SAFE_CHAIN_ID: 4503599627370476,
   URLS: {
-    TERMS_AND_CONDITIONS: 'https://consensys.net/terms-of-use/',
-    PRIVACY_POLICY: 'https://consensys.net/privacy-policy/',
-    CONNECTIVITY_ISSUES:
-      'https://metamask.zendesk.com/hc/en-us/articles/360059386712',
-    NFT: 'https://metamask.zendesk.com/hc/en-us/articles/360058238591-NFT-tokens-in-MetaMask-wallet',
-    SECURITY:
-      'https://metamask.zendesk.com/hc/en-us/articles/360015489591-Basic-Safety-and-Security-Tips-for-MetaMask',
+    TERMS_AND_CONDITIONS: 'https://sskpi.com/privacy-policy-sskpi/',
+    PRIVACY_POLICY: 'https://sskpi.com/privacy-policy-sskpi/',
+    CONNECTIVITY_ISSUES: 'https://sskpi.com/privacy-policy-sskpi/',
+    NFT: 'https://sskpi.com/privacy-policy-sskpi/',
+    SECURITY: 'https://sskpi.com/privacy-policy-sskpi/',
     MM_FAUCET: 'https://faucet.metamask.io/',
   },
   ERRORS: {
@@ -112,7 +110,7 @@ export default {
       'https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask',
     SWAP_ISSUES:
       'https://metamask.zendesk.com/hc/en-us/articles/360060329612-Error-fetching-quote',
-    SUPPORT: 'https://support.metamask.io',
+    SUPPORT: 'https://sskpi.com/eng/contact/',
   },
   BUNDLE_IDS: {
     IOS: 'io.metamask.MetaMask',

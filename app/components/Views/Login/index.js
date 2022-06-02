@@ -1,30 +1,30 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import {
-  Switch,
-  Alert,
   ActivityIndicator,
-  Text,
-  View,
-  SafeAreaView,
-  StyleSheet,
+  Alert,
+  BackHandler,
   Image,
   InteractionManager,
-  TouchableWithoutFeedback,
   Keyboard,
-  BackHandler,
+  SafeAreaView,
+  StyleSheet,
+  Switch,
+  Text,
+  TouchableWithoutFeedback,
+  View,
 } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import Button from 'react-native-button';
 import Engine from '../../../core/Engine';
 import StyledButton from '../../UI/StyledButton';
-import { fontStyles, colors as importedColors } from '../../../styles/common';
+import { colors as importedColors, fontStyles } from '../../../styles/common';
 import { strings } from '../../../../locales/i18n';
 import SecureKeychain from '../../../core/SecureKeychain';
 import FadeOutOverlay from '../../UI/FadeOutOverlay';
 import setOnboardingWizardStep from '../../../actions/wizard';
-import { logIn, logOut, checkedAuth } from '../../../actions/user';
+import { checkedAuth, logIn, logOut } from '../../../actions/user';
 import { connect } from 'react-redux';
 import Device from '../../../util/device';
 import { OutlinedTextField } from 'react-native-material-textfield';
@@ -33,11 +33,11 @@ import { recreateVaultWithSamePassword } from '../../../core/Vault';
 import Logger from '../../../util/Logger';
 import {
   BIOMETRY_CHOICE_DISABLED,
-  ONBOARDING_WIZARD,
   ENCRYPTION_LIB,
-  TRUE,
-  ORIGINAL,
   EXISTING_USER,
+  ONBOARDING_WIZARD,
+  ORIGINAL,
+  TRUE,
 } from '../../../constants/storage';
 import { passwordRequirementsMet } from '../../../util/password';
 import ErrorBoundary from '../ErrorBoundary';
@@ -46,8 +46,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { trackErrorAsAnalytics } from '../../../util/analyticsV2';
 import { tlc, toLowerCaseEquals } from '../../../util/general';
 import DefaultPreference from 'react-native-default-preference';
-import { ThemeContext, mockTheme } from '../../../util/theme';
-import AnimatedFox from 'react-native-animated-fox';
+import { mockTheme, ThemeContext } from '../../../util/theme';
 import {
   DELETE_WALLET_CONTAINER_ID,
   DELETE_WALLET_INPUT_BOX_ID,
@@ -661,15 +660,11 @@ class Login extends PureComponent {
           >
             <View testID={'login'}>
               <View style={styles.foxWrapper}>
-                {Device.isAndroid() ? (
-                  <Image
-                    source={require('../../../images/fox.png')}
-                    style={styles.image}
-                    resizeMethod={'auto'}
-                  />
-                ) : (
-                  <AnimatedFox bgColor={colors.background.default} />
-                )}
+                <Image
+                  source={require('../../../images/fox.png')}
+                  style={styles.image}
+                  resizeMethod={'auto'}
+                />
               </View>
               <Text style={styles.title}>{strings('login.title')}</Text>
               <View style={styles.field}>

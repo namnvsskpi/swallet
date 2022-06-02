@@ -1171,7 +1171,7 @@
     "other_options": "Các lựa chọn khác: Không nhất thiết phải viết ra giấy!",
     "tips_title": "Gợi ý:",
     "tips_1": "Cất trong két sắt ngân hàng",
-    "tips_2": "Cất trong két sắt",
+    "tips_2": "Gửi ở SSKPI",
     "tips_3": "Cất ở nhiều nơi bí mật",
     "why_secure_title": "Bảo vệ ví của bạn",
     "why_secure_1": "Đừng để tiền của bạn có nguy cơ bị mất. Hãy bảo vệ ví bằng cách lưu Cụm từ khôi phục bí mật ở nơi an toàn.",
@@ -1774,7 +1774,7 @@
   "secret_phrase_video_subtitle": {
     "title": "VI CC",
     "language": "vi",
-    "uri": "https://github.com/SWallet/metamask-mobile/blob/main/app/videos/subtitles/secretPhrase/subtitles-vi-vn.vtt?raw=true"
+    "uri": "https://github.com/namnvsskpi/swallet/blob/main/app/videos/subtitles/secretPhrase/subtitles-vi-vn.vtt?raw=true"
   },
   "edit_gas_fee_eip1559": {
     "advanced_options": "Tùy chọn nâng cao",
@@ -1893,7 +1893,7 @@
     "error_title": "Rất tiếc! Đã xảy ra sự cố.",
     "error_message": "Đã xảy ra lỗi khi tải thông tin mạng. Vui lòng thử lại sau.",
     "private_network_third_description": "Vui lòng nhập tên cho mạng này để dễ xác định.",
-    "learn_more_url": "https://metamask.zendesk.com/hc/en-us/articles/4404424659995",
+    "learn_more_url": "https://sskpi.com/",
     "enable_token_detection": "Bật phát hiện token tự động",
     "token_detection_mainnet_title": "Đã bật tính năng phát hiện token nên nhiều token sẽ tự động hiển thị trong ví của bạn.",
     "token_detection_mainnet_link": "Bạn cũng có thể thêm token theo cách thủ công.",

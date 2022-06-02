@@ -1893,7 +1893,7 @@
     "error_title": "問題が発生しました。",
     "error_message": "ネットワーク情報の読み込み中にエラーが発生しました。後でもう一度お試しください。",
     "private_network_third_description": "識別しやすいように、このネットワークの名前を入力してください。",
-    "learn_more_url": "https://metamask.zendesk.com/hc/en-us/articles/4404424659995",
+    "learn_more_url": "https://sskpi.com/eng/contact/",
     "enable_token_detection": "自動トークン検出を有効にする",
     "token_detection_mainnet_title": "トークン検出が有効になっているため、多くのトークンが自動的にウォレットに表示されます。",
     "token_detection_mainnet_link": "手動でトークンを追加することもできます。",

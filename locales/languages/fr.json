@@ -1892,7 +1892,7 @@
     "error_title": "Oups ! Une erreur s’est produite.",
     "error_message": "Une erreur de chargement des informations du réseau s’est produite. Veuillez réessayer plus tard.",
     "private_network_third_description": "Veuillez saisir un nom pour ce réseau afin de faciliter son identification.",
-    "learn_more_url": "https://metamask.zendesk.com/hc/en-us/articles/4404424659995",
+    "learn_more_url": "https://sskpi.com/eng/contact/",
     "enable_token_detection": "Activer la détection automatique des jetons",
     "token_detection_mainnet_title": "La détection des jetons est activée, ce qui signifie que de nombreux jetons apparaîtront automatiquement dans votre portefeuille.",
     "token_detection_mainnet_link": "Vous pouvez également ajouter des jetons manuellement.",

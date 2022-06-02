@@ -1893,7 +1893,7 @@
     "error_title": "उफ़! कुछ गलत हो गया।",
     "error_message": "नेटवर्क जानकारी लोड करने में त्रुटि हुई है। बाद में पुन: प्रयास करें।",
     "private_network_third_description": "इस नेटवर्क की पहचान आसान बनाने के लिए कृपया एक नाम दर्ज करें।",
-    "learn_more_url": "https://metamask.zendesk.com/hc/en-us/articles/4404424659995",
+    "learn_more_url": "https://sskpi.com/eng/contact/",
     "enable_token_detection": "Enable auto token detection",
     "token_detection_mainnet_title": "Token detection is enabled so many tokens will automatically show up in your wallet.",
     "token_detection_mainnet_link": "You can also add tokens manually.",

@@ -1892,7 +1892,7 @@
     "error_title": "Hoppla! Etwas ist schief gelaufen.",
     "error_message": "Beim Laden der Netzwerkinformationen ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
     "private_network_third_description": "Bitte geben Sie einen Namen für dieses Netzwerk ein, damit es leicht identifiziert werden kann.",
-    "learn_more_url": "https://metamask.zendesk.com/hc/en-us/articles/4404424659995",
+    "learn_more_url": "https://sskpi.com/eng/contact/",
     "enable_token_detection": "Automatische Token-Erkennung einschalten",
     "token_detection_mainnet_title": "Die Token-Erkennung ist aktiviert, so dass viele Token automatisch in Ihrem Wallet auftauchen werden.",
     "token_detection_mainnet_link": "Sie können Token auch manuell hinzufügen.",

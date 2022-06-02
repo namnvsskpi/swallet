@@ -1893,7 +1893,7 @@
     "error_title": "哎呀！出了点问题。",
     "error_message": "加载网络信息时出错。请稍后再试。",
     "private_network_third_description": "请为此网络输入名称，以便于识别。  ",
-    "learn_more_url": "https://metamask.zendesk.com/hc/en-us/articles/4404424659995",
+    "learn_more_url": "https://sskpi.com/eng/contact/",
     "enable_token_detection": "启用自动代币检测",
     "token_detection_mainnet_title": "已启用代币检测，因此将会有许多代币自动显示在您的钱包中。",
     "token_detection_mainnet_link": "您也可以手动添加代币。",

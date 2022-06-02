@@ -1,16 +1,16 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import {
-  Switch,
   ActivityIndicator,
   Alert,
-  Text,
-  View,
-  TextInput,
-  SafeAreaView,
-  StyleSheet,
   Image,
   InteractionManager,
+  SafeAreaView,
+  StyleSheet,
+  Switch,
+  Text,
+  TextInput,
+  View,
 } from 'react-native';
 // eslint-disable-next-line import/no-unresolved
 import CheckBox from '@react-native-community/checkbox';
@@ -27,7 +27,7 @@ import { setLockTime } from '../../../actions/settings';
 import StyledButton from '../../UI/StyledButton';
 import Engine from '../../../core/Engine';
 import Device from '../../../util/device';
-import { fontStyles, colors as importedColors } from '../../../styles/common';
+import { colors as importedColors, fontStyles } from '../../../styles/common';
 import { strings } from '../../../../locales/i18n';
 import { getOnboardingNavbarOptions } from '../../UI/Navbar';
 import SecureKeychain from '../../../core/SecureKeychain';
@@ -38,29 +38,28 @@ import zxcvbn from 'zxcvbn';
 import Logger from '../../../util/Logger';
 import { ONBOARDING, PREVIOUS_SCREEN } from '../../../constants/navigation';
 import {
+  BIOMETRY_CHOICE_DISABLED,
   EXISTING_USER,
   NEXT_MAKER_REMINDER,
-  TRUE,
   SEED_PHRASE_HINTS,
-  BIOMETRY_CHOICE_DISABLED,
+  TRUE,
 } from '../../../constants/storage';
 import {
   getPasswordStrengthWord,
-  passwordRequirementsMet,
   MIN_PASSWORD_LENGTH,
+  passwordRequirementsMet,
 } from '../../../util/password';
 
 import { CHOOSE_PASSWORD_STEPS } from '../../../constants/onboarding';
 import AnalyticsV2 from '../../../util/analyticsV2';
-import { ThemeContext, mockTheme } from '../../../util/theme';
-import AnimatedFox from 'react-native-animated-fox';
+import { mockTheme, ThemeContext } from '../../../util/theme';
 
 import {
+  ANDROID_I_UNDERSTAND_BUTTON_ID,
+  CONFIRM_PASSWORD_INPUT_BOX_ID,
   CREATE_PASSWORD_CONTAINER_ID,
   CREATE_PASSWORD_INPUT_BOX_ID,
-  CONFIRM_PASSWORD_INPUT_BOX_ID,
   IOS_I_UNDERSTAND_BUTTON_ID,
-  ANDROID_I_UNDERSTAND_BUTTON_ID,
 } from '../../../constants/test-ids';
 
 const createStyles = (colors) =>
@@ -658,15 +657,11 @@ class ChoosePassword extends PureComponent {
         {loading ? (
           <View style={styles.loadingWrapper}>
             <View style={styles.foxWrapper}>
-              {Device.isAndroid() ? (
-                <Image
-                  source={require('../../../images/fox.png')}
-                  style={styles.image}
-                  resizeMethod={'auto'}
-                />
-              ) : (
-                <AnimatedFox bgColor={colors.background.default} />
-              )}
+              <Image
+                source={require('../../../images/fox.png')}
+                style={styles.image}
+                resizeMethod={'auto'}
+              />
             </View>
             <ActivityIndicator size="large" color={colors.text.default} />
             <Text style={styles.title}>
