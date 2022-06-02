@@ -67,7 +67,7 @@ tests
 
 # environment variables
 .js.env
-.ios.env
+.ios.env.example
 .android.env
 
 # Sentry

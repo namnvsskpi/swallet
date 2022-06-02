@@ -479,7 +479,7 @@
     "protect_title": "ウォレットを保護",
     "video_failed": "動画を読み込めませんでした。",
     "protect_desc": "紙やパスワードマネージャー、クラウドなど、さまざまな場所に秘密のリカバリーフレーズを保管して、ウォレットを守りましょう。",
-    "protect_desc_no_backup": "これはウォレットの 12  の単語からなるフレーズです。このフレーズはウォレットの資金の送金を含む、現在と未来のすべてのアカウントのコントロールに使用できます。このフレーズを安全に保管し、他人に絶対に教えないでください。MetaMask  はこのキーの復元をお手伝いできません。",
+    "protect_desc_no_backup": "これはウォレットの 12  の単語からなるフレーズです。このフレーズはウォレットの資金の送金を含む、現在と未来のすべてのアカウントのコントロールに使用できます。このフレーズを安全に保管し、他人に絶対に教えないでください。SWallet  はこのキーの復元をお手伝いできません。",
     "learn_more": "詳細。",
     "seedphrase_not_backed_up": "重要！秘密のリカバリーフレーズがバックアップされていません",
     "seedphrase_backed_up": "秘密のリカバリーフレーズのバックアップ",
@@ -619,7 +619,7 @@
       "{{credentialName}}があれば、",
       "アカウントと資金に完全にアクセスできます。\n\n誰にも教えないでください。",
       "ウォレットと資金に完全にアクセスできます。\n\n誰にも教えないでください。",
-      "MetaMask サポートがこの情報を尋ねることはなく、",
+      "SWallet サポートがこの情報を尋ねることはなく、",
       "もし尋ねられた場合はフィッシング詐欺の可能性があります。"
     ],
     "seed_phrase": "秘密のリカバリーフレーズ",
@@ -800,7 +800,7 @@
     "invalid_qr_code_sync": "QRコードが無効です。ハードウェアの同期QR コードをスキャンしてください。",
     "no_camera_permission": "カメラが承認されていません。パーミッションを付与して再度お試しください",
     "invalid_qr_code_sign": "無効な QR コードです。ハードウェアを確認して再度お試しください。",
-    "no_camera_permission_android": "続けるには、MetaMask によるカメラへのアクセスを許可する必要があります。また、システム設定の変更が必要な場合もあります。",
+    "no_camera_permission_android": "続けるには、SWallet によるカメラへのアクセスを許可する必要があります。また、システム設定の変更が必要な場合もあります。",
     "mismatched_qr_request_id": "トランザクションデータが一致していません。Keystone で下の QR コードに署名して、[署名を取得] をタップしてください。"
   },
   "custom_gas": {
@@ -1529,13 +1529,13 @@
       "best_swap": "スワップを",
       "across": "検索...",
       "want_to_learn_more": "さらに詳しく知りたい場合",
-      "learn_more": "MetaMask Swapsの詳細",
+      "learn_more": "SWallet Swapsの詳細",
       "what_are": "トークンスワップとは",
       "review_audits": "公式コントラクト監査をご覧ください",
       "start_swapping": "スワップを開始"
     },
     "feature_off_title": "一時的に利用できません",
-    "feature_off_body": "MetaMask Swapsはメンテナンス中です。後ほどご確認ください。",
+    "feature_off_body": "SWallet Swapsはメンテナンス中です。後ほどご確認ください。",
     "wrong_network_title": "Swapsが利用できません",
     "wrong_network_body": "トークンのスワップはEthereum Main Networkでのみ可能です。",
     "unallowed_asset_title": "このトークンはスワップできません",
@@ -1730,7 +1730,7 @@
   "whats_new": {
     "title": "新機能をご覧ください",
     "feature_security_settings_title": "セキュリティ設定の改善",
-    "feature_security_settings_text": "「設定」 > 「セキュリティとプライバシー」から、MetaMask アプリのパスワードを変更したり、ウォレットの秘密のリカバリーフレーズのバックアップ方法を確認したりできるようになりました。",
+    "feature_security_settings_text": "「設定」 > 「セキュリティとプライバシー」から、SWallet アプリのパスワードを変更したり、ウォレットの秘密のリカバリーフレーズのバックアップ方法を確認したりできるようになりました。",
     "feature_security_settings_button": "設定に表示"
   },
   "invalid_network": {
@@ -1774,7 +1774,7 @@
   "secret_phrase_video_subtitle": {
     "title": "JA CC",
     "language": "ja",
-    "uri": "https://github.com/MetaMask/metamask-mobile/blob/main/app/videos/subtitles/secretPhrase/subtitles-ja-jp.vtt?raw=true"
+    "uri": "https://github.com/SWallet/metamask-mobile/blob/main/app/videos/subtitles/secretPhrase/subtitles-ja-jp.vtt?raw=true"
   },
   "edit_gas_fee_eip1559": {
     "advanced_options": "高度なオプション",
