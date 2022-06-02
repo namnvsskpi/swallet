@@ -1,16 +1,16 @@
-![MetaMask logo](logo.png?raw=true)
+![SWallet logo](logo.png?raw=true)
 
-# MetaMask
+# SWallet
 
-[![CI](https://github.com/MetaMask/metamask-mobile/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MetaMask/metamask-mobile/actions/workflows/ci.yml) [![CLA](https://github.com/MetaMask/metamask-mobile/actions/workflows/cla.yml/badge.svg?branch=main)](https://github.com/MetaMask/metamask-mobile/actions/workflows/cla.yml)
+[![CI](https://github.com/SWallet/metamask-mobile/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/SWallet/metamask-mobile/actions/workflows/ci.yml) [![CLA](https://github.com/SWallet/metamask-mobile/actions/workflows/cla.yml/badge.svg?branch=main)](https://github.com/SWallet/metamask-mobile/actions/workflows/cla.yml)
 
-MetaMask is a mobile wallet that provides easy access to websites that use the [Ethereum](https://ethereum.org/) blockchain.
+SWallet is a mobile wallet that provides easy access to websites that use the [Ethereum](https://ethereum.org/) blockchain.
 
 For up to the minute news, follow our [Twitter](https://twitter.com/metamask) or [Medium](https://medium.com/metamask) pages.
 
-To learn how to develop MetaMask-compatible applications, visit our [Developer Docs](https://docs.metamask.io).
+To learn how to develop SWallet-compatible applications, visit our [Developer Docs](https://docs.metamask.io).
 
-## MetaMask Mobile
+## SWallet Mobile
 
 ### Building Locally
 
@@ -30,7 +30,7 @@ The code is built using React-Native and running code locally requires a Mac or 
 sudo gem install cocoapods
 ```
 
--   _MetaMask Only:_ Rename the `.*.env.example` files (remove the `.example`) in the root of the project and fill in the appropriate values for each key. Get the values from another MetaMask Mobile developer.
+-   _MetaMask Only:_ Rename the `.*.env.example` files (remove the `.example`) in the root of the project and fill in the appropriate values for each key. Get the values from another SWallet Mobile developer.
 
 -   Clone this repo and install our dependencies:
 
@@ -41,7 +41,7 @@ yarn setup # not the usual install command, this will run a lengthy postinstall 
 cd ios && pod install && cd .. # install pods for iOS
 ```
 
--   _Non-MetaMask Only:_ In the project root folder run
+-   _Non-SWallet Only:_ In the project root folder run
 
 ```
   cp .ios.env.example .ios.env && \
@@ -49,7 +49,7 @@ cd ios && pod install && cd .. # install pods for iOS
   cp .js.env.example .js.env
 ```
 
--   _Non-MetaMask Only:_ Create an account and generate your own API key at [Infura](https://infura.io) in order to connect to main and test nets. Fill `MM_INFURA_PROJECT_ID` in `.js.env`. (App will run without it, but will not be able to connect to actual network.)
+-   _Non-SWallet Only:_ Create an account and generate your own API key at [Infura](https://infura.io) in order to connect to main and test nets. Fill `MM_INFURA_PROJECT_ID` in `.js.env`. (App will run without it, but will not be able to connect to actual network.)
 
 -   Then, in one terminal, run:
 
@@ -201,7 +201,7 @@ Whenever you change dependencies (adding, removing, or updating, either in `pack
 
 ### Architecture
 
-To get a better understanding of the internal architecture of this app take a look at [this diagram](https://github.com/MetaMask/metamask-mobile/blob/main/architecture.svg).
+To get a better understanding of the internal architecture of this app take a look at [this diagram](https://github.com/SWallet/metamask-mobile/blob/main/architecture.svg).
 
 ### Storybook
 

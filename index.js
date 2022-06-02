@@ -17,7 +17,7 @@ import { name } from './app.json';
 LogBox.ignoreLogs([
   '{}',
   // Uncomment the below lines (21 and 22) to run browser-tests.spec.js in debug mode
-  // in e2e tests until issue https://github.com/MetaMask/metamask-mobile/issues/1395 is resolved
+  // in e2e tests until issue https://github.com/SWallet/metamask-mobile/issues/1395 is resolved
   //"Error in RPC response",
   // 'User rejected account access',
   "Can't perform a React state update",

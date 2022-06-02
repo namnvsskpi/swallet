@@ -4,9 +4,9 @@ import { Dedupe, ExtraErrorData } from '@sentry/integrations';
 
 const METAMASK_ENVIRONMENT = process.env['METAMASK_ENVIRONMENT'] || 'local'; // eslint-disable-line dot-notation
 const SENTRY_DSN_PROD =
-  'https://ae39e4b08d464bba9fbf121c85ccfca0@sentry.io/2299799'; // metamask-mobile
+  'https://4668e9f94dfa484e8f06d576f14d4451@o1271628.ingest.sentry.io/6464189'; // metamask-mobile
 const SENTRY_DSN_DEV =
-  'https://332890de43e44fe2bc070bb18d0934ea@sentry.io/2651591'; // test-metamask-mobile
+  'https://4668e9f94dfa484e8f06d576f14d4451@o1271628.ingest.sentry.io/6464189'; // test-metamask-mobile
 /**
  * Required instrumentation for Sentry Performance to work with React Navigation
  */

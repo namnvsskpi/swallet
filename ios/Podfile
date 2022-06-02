@@ -33,7 +33,7 @@ def react_native_post_install(installer)
 	end
   end
 
-target 'MetaMask' do
+target 'SWallet' do
   config = use_native_modules!
   # Comment the next line if you don't want to use dynamic frameworks
   # use_frameworks!
@@ -44,7 +44,7 @@ target 'MetaMask' do
     :hermes_enabled => false
   )
 
-  # Pods for MetaMask
+  # Pods for SWallet
   pod 'React-RCTPushNotification', :path => '../node_modules/react-native/Libraries/PushNotificationIOS'
 
   # you should disable the next line.

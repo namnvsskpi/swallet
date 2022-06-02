@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07CBADD9D4B441008304F8D3 /* EuclidCircularB-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A98029A3662F4C1391489A6B /* EuclidCircularB-Light.otf */; };
-		0FD509E0336BF221F6527B24 /* libPods-MetaMask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0FF04C201CE95ED7EEEA82 /* libPods-MetaMask.a */; };
+		0FD509E0336BF221F6527B24 /* libPods-SWallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0FF04C201CE95ED7EEEA82 /* libPods-SWallet.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -167,24 +167,24 @@
 
 /* Begin PBXFileReference section */
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* MetaMaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetaMaskTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* MetaMask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaMask.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MetaMask/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MetaMask/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* SWalletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWalletTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* SWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SWallet/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SWallet/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MetaMask/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MetaMask/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MetaMask/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SWallet/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SWallet/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SWallet/main.m; sourceTree = "<group>"; };
 		13EE4910D3BD408A8FCCA5D7 /* EuclidCircularB-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EuclidCircularB-BoldItalic.otf"; path = "../app/fonts/EuclidCircularB-BoldItalic.otf"; sourceTree = "<group>"; };
-		15205D6221596AD90049EA93 /* MetaMask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MetaMask.entitlements; path = MetaMask/MetaMask.entitlements; sourceTree = "<group>"; };
+		15205D6221596AD90049EA93 /* SWallet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = SWallet.entitlements; path = SWallet/SWallet.entitlements; sourceTree = "<group>"; };
 		153C1A742217BCDC0088EFE0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		153F84C42319B8DA00C19B63 /* BranchSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BranchSDK.xcodeproj; path = "branch-ios-sdk/carthage-files/BranchSDK.xcodeproj"; sourceTree = "<group>"; };
 		158B0639211A72F500DF3C74 /* InpageBridgeWeb3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = InpageBridgeWeb3.js; path = ../app/core/InpageBridgeWeb3.js; sourceTree = "<group>"; };
 		159878012231DF67001748EC /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		15D158EC210BD8C8006982B5 /* Metamask.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Metamask.ttf; path = ../app/fonts/Metamask.ttf; sourceTree = "<group>"; };
 		15F7794F22A1B79400B1DF8C /* Mixpanel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mixpanel.xcodeproj; path = "mixpanel-iphone/Mixpanel.xcodeproj"; sourceTree = "<group>"; };
-		15F7796322A1BC8C00B1DF8C /* RCTAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTAnalytics.h; path = MetaMask/NativeModules/RCTAnalytics/RCTAnalytics.h; sourceTree = "<group>"; };
-		15F7796422A1BC8C00B1DF8C /* RCTAnalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTAnalytics.m; path = MetaMask/NativeModules/RCTAnalytics/RCTAnalytics.m; sourceTree = "<group>"; };
+		15F7796322A1BC8C00B1DF8C /* RCTAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTAnalytics.h; path = SWallet/NativeModules/RCTAnalytics/RCTAnalytics.h; sourceTree = "<group>"; };
+		15F7796422A1BC8C00B1DF8C /* RCTAnalytics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTAnalytics.m; path = SWallet/NativeModules/RCTAnalytics/RCTAnalytics.m; sourceTree = "<group>"; };
 		15FDD82721B7642B006B7C35 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		15FDD86021B76461006B7C35 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		178440FE3F1C4F4180D14622 /* libTcpSockets.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libTcpSockets.a; sourceTree = "<group>"; };
@@ -193,6 +193,7 @@
 		278065D027394AD9B2906E38 /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D84C5502846111B00F51DB0 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		3DE47B6428487EC70033CA7D /* SWalletDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = SWalletDebug.entitlements; sourceTree = "<group>"; };
 		3E2492C67CF345CABD7B8601 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../app/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		42C239E9FAA64BD9A34B8D8A /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		42C6DDE3B80F47AFA9C9D4F5 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
@@ -206,7 +207,7 @@
 		5D7956F8525C4A45A2A555C3 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../app/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		5E32A09A7BDC431FA403BA73 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		650F2B9724DC5FEB00C3B9C4 /* RCTAesForked.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAesForked.xcodeproj; path = "../node_modules/react-native-aes-crypto-forked/ios/RCTAesForked.xcodeproj"; sourceTree = "<group>"; };
-		654378AE243E2ADB00571B9C /* MetaMask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MetaMask-Bridging-Header.h"; sourceTree = "<group>"; };
+		654378AE243E2ADB00571B9C /* SWallet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SWallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		654378AF243E2ADC00571B9C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		67FBD519E04742E0AF191782 /* EuclidCircularB-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EuclidCircularB-Bold.otf"; path = "../app/fonts/EuclidCircularB-Bold.otf"; sourceTree = "<group>"; };
 		684F2C84313849199863B5FE /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../app/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
@@ -218,24 +219,23 @@
 		A8DE9C5BC0714D648276E123 /* EuclidCircularB-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EuclidCircularB-Semibold.otf"; path = "../app/fonts/EuclidCircularB-Semibold.otf"; sourceTree = "<group>"; };
 		A98029A3662F4C1391489A6B /* EuclidCircularB-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EuclidCircularB-Light.otf"; path = "../app/fonts/EuclidCircularB-Light.otf"; sourceTree = "<group>"; };
 		A98DB430A7DA47EFB97EDF8B /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		AA9EDF17249955C7005D89EE /* MetaMaskDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MetaMaskDebug.entitlements; path = MetaMask/MetaMaskDebug.entitlements; sourceTree = "<group>"; };
 		B0EF7FA827BD16EA00D48B4E /* ThemeColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ThemeColors.xcassets; sourceTree = "<group>"; };
 		BB8BA2D3C0354D6090B56A8A /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../app/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		BF485CDA047B4D52852B87F5 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		C752564A28B44392AEE16BD5 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../app/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		C9FD3FB1258A41A5A0546C83 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../app/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		CE0434C5FB7C4C6F9FEBDCE2 /* EuclidCircularB-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EuclidCircularB-Medium.otf"; path = "../app/fonts/EuclidCircularB-Medium.otf"; sourceTree = "<group>"; };
-		CEBDB50281E3230DEEC32937 /* Pods-MetaMask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaMask.debug.xcconfig"; path = "Target Support Files/Pods-MetaMask/Pods-MetaMask.debug.xcconfig"; sourceTree = "<group>"; };
+		CEBDB50281E3230DEEC32937 /* Pods-SWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWallet.debug.xcconfig"; path = "Target Support Files/Pods-SWallet/Pods-SWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		CF552F79C77A4184A690513A /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../app/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		D0CBAE789660472DB719C765 /* libLottie.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libLottie.a; sourceTree = "<group>"; };
 		D5FF0FF1DFB74B3C8BB99E09 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../app/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
 		D9A37B5BF2914CF1B49EEF80 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../app/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		E020F42F788744B3BCE17F05 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../app/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		E9629905BA1940ADA4189921 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		EA0FF04C201CE95ED7EEEA82 /* libPods-MetaMask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MetaMask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0FF04C201CE95ED7EEEA82 /* libPods-SWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC2B6371CD846D28B9FAADF /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		EF1C01B7F08047F9B8ADCFBA /* config.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = config.json; path = ../app/fonts/config.json; sourceTree = "<group>"; };
-		F1857854610FB89EA41B3134 /* Pods-MetaMask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaMask.release.xcconfig"; path = "Target Support Files/Pods-MetaMask/Pods-MetaMask.release.xcconfig"; sourceTree = "<group>"; };
+		F1857854610FB89EA41B3134 /* Pods-SWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWallet.release.xcconfig"; path = "Target Support Files/Pods-SWallet/Pods-SWallet.release.xcconfig"; sourceTree = "<group>"; };
 		F562CA6B28AA4A67AA29B61C /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		F564570593ED4F3FB10BD348 /* EuclidCircularB-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EuclidCircularB-Regular.otf"; path = "../app/fonts/EuclidCircularB-Regular.otf"; sourceTree = "<group>"; };
 		F79EAC4A7BF74E458277AFA4 /* EuclidCircularB-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "EuclidCircularB-LightItalic.otf"; path = "../app/fonts/EuclidCircularB-LightItalic.otf"; sourceTree = "<group>"; };
@@ -255,20 +255,20 @@
 				15ACC9FC22655C3A0063978B /* Lottie.framework in Frameworks */,
 				15F7795E22A1B7B500B1DF8C /* Mixpanel.framework in Frameworks */,
 				153F84CA2319B8FD00C19B63 /* Branch.framework in Frameworks */,
-				0FD509E0336BF221F6527B24 /* libPods-MetaMask.a in Frameworks */,
+				0FD509E0336BF221F6527B24 /* libPods-SWallet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* MetaMaskTests */ = {
+		00E356EF1AD99517003FC87E /* SWalletTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* MetaMaskTests.m */,
+				00E356F21AD99517003FC87E /* SWalletTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = MetaMaskTests;
+			path = SWalletTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -279,12 +279,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* MetaMask */ = {
+		13B07FAE1A68108700A75B9A /* SWallet */ = {
 			isa = PBXGroup;
 			children = (
-				AA9EDF17249955C7005D89EE /* MetaMaskDebug.entitlements */,
+				3DE47B6428487EC70033CA7D /* SWalletDebug.entitlements */,
 				15F7796222A1BC1E00B1DF8C /* NativeModules */,
-				15205D6221596AD90049EA93 /* MetaMask.entitlements */,
+				15205D6221596AD90049EA93 /* SWallet.entitlements */,
 				158B0639211A72F500DF3C74 /* InpageBridgeWeb3.js */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -296,7 +296,7 @@
 				B0EF7FA827BD16EA00D48B4E /* ThemeColors.xcassets */,
 				3D84C5502846111B00F51DB0 /* main.jsbundle */,
 			);
-			name = MetaMask;
+			name = SWallet;
 			sourceTree = "<group>";
 		};
 		153F84C52319B8DA00C19B63 /* Products */ = {
@@ -365,7 +365,7 @@
 				F961A36A28105CF9007442B5 /* LinkPresentation.framework */,
 				153C1A742217BCDC0088EFE0 /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				EA0FF04C201CE95ED7EEEA82 /* libPods-MetaMask.a */,
+				EA0FF04C201CE95ED7EEEA82 /* libPods-SWallet.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -441,15 +441,15 @@
 				654378AF243E2ADC00571B9C /* File.swift */,
 				15FDD86021B76461006B7C35 /* release.xcconfig */,
 				15FDD82721B7642B006B7C35 /* debug.xcconfig */,
-				13B07FAE1A68108700A75B9A /* MetaMask */,
+				13B07FAE1A68108700A75B9A /* SWallet */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* MetaMaskTests */,
+				00E356EF1AD99517003FC87E /* SWalletTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				4A27949D046C4516B9653BBB /* Resources */,
 				15A2E5EF2100077400A1F331 /* Recovered References */,
 				AA342D524556DBBE26F5997C /* Pods */,
-				654378AE243E2ADB00571B9C /* MetaMask-Bridging-Header.h */,
+				654378AE243E2ADB00571B9C /* SWallet-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -459,7 +459,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* MetaMask.app */,
+				13B07F961A680F5B00A75B9A /* SWallet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -467,8 +467,8 @@
 		AA342D524556DBBE26F5997C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CEBDB50281E3230DEEC32937 /* Pods-MetaMask.debug.xcconfig */,
-				F1857854610FB89EA41B3134 /* Pods-MetaMask.release.xcconfig */,
+				CEBDB50281E3230DEEC32937 /* Pods-SWallet.debug.xcconfig */,
+				F1857854610FB89EA41B3134 /* Pods-SWallet.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -476,9 +476,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* MetaMask */ = {
+		13B07F861A680F5B00A75B9A /* SWallet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MetaMask" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SWallet" */;
 			buildPhases = (
 				99E9B9D94E374E1799EFBA99 /* [CP] Check Pods Manifest.lock */,
 				15FDD86321B76696006B7C35 /* Override xcconfig files */,
@@ -497,9 +497,9 @@
 				15F7796122A1B7B500B1DF8C /* PBXTargetDependency */,
 				153F84CD2319B8FD00C19B63 /* PBXTargetDependency */,
 			);
-			name = MetaMask;
+			name = SWallet;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* MetaMask.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* SWallet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -509,7 +509,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = MetaMask;
+				ORGANIZATIONNAME = SWallet;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 48XVW22RCG;
@@ -526,7 +526,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MetaMask" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SWallet" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -558,7 +558,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* MetaMask */,
+				13B07F861A680F5B00A75B9A /* SWallet */,
 			);
 		};
 /* End PBXProject section */
@@ -685,7 +685,7 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MetaMask/Pods-MetaMask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SWallet/Pods-SWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			inputPaths = (
 			);
@@ -720,15 +720,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MetaMask/Pods-MetaMask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SWallet/Pods-SWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MetaMask/Pods-MetaMask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SWallet/Pods-SWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetaMask/Pods-MetaMask-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SWallet/Pods-SWallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		802588CED3FC487A5D5263F0 /* [CP] Copy Pods Resources */ = {
@@ -737,15 +737,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MetaMask/Pods-MetaMask-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SWallet/Pods-SWallet-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MetaMask/Pods-MetaMask-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SWallet/Pods-SWallet-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetaMask/Pods-MetaMask-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SWallet/Pods-SWallet-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		99E9B9D94E374E1799EFBA99 /* [CP] Check Pods Manifest.lock */ = {
@@ -763,7 +763,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MetaMask-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SWallet-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -811,7 +811,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = MetaMask;
+			path = SWallet;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -819,12 +819,12 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEBDB50281E3230DEEC32937 /* Pods-MetaMask.debug.xcconfig */;
+			baseConfigurationReference = CEBDB50281E3230DEEC32937 /* Pods-SWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_OPTIMIZATION = time;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = MetaMask/MetaMaskDebug.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SWallet/SWalletDebug.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -852,7 +852,7 @@
 					"$(SRCROOT)/../node_modules/react-native-view-shot/ios",
 					"$(SRCROOT)/../node_modules/react-native-tcp/ios/**",
 				);
-				INFOPLIST_FILE = MetaMask/Info.plist;
+				INFOPLIST_FILE = SWallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -860,7 +860,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/MetaMask/System/Library/Frameworks\"",
+					"\"$(SRCROOT)/SWallet/System/Library/Frameworks\"",
 				);
 				LLVM_LTO = YES;
 				MARKETING_VERSION = 1.0.0;
@@ -875,9 +875,9 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slab.swallet;
-				PRODUCT_NAME = MetaMask;
+				PRODUCT_NAME = SWallet;
 				PROVISIONING_PROFILE_SPECIFIER = adhoc_swallet;
-				SWIFT_OBJC_BRIDGING_HEADER = "MetaMask-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SWallet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -886,12 +886,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1857854610FB89EA41B3134 /* Pods-MetaMask.release.xcconfig */;
+			baseConfigurationReference = F1857854610FB89EA41B3134 /* Pods-SWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_OPTIMIZATION = time;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = MetaMask/MetaMask.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SWallet/SWallet.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -918,7 +918,7 @@
 					"$(SRCROOT)/../node_modules/react-native-view-shot/ios",
 					"$(SRCROOT)/../node_modules/react-native-tcp/ios/**",
 				);
-				INFOPLIST_FILE = MetaMask/Info.plist;
+				INFOPLIST_FILE = SWallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -926,7 +926,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/MetaMask/System/Library/Frameworks\"",
+					"\"$(SRCROOT)/SWallet/System/Library/Frameworks\"",
 				);
 				LLVM_LTO = YES;
 				MARKETING_VERSION = 1.0.0;
@@ -941,9 +941,9 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slab.swallet;
-				PRODUCT_NAME = MetaMask;
+				PRODUCT_NAME = SWallet;
 				PROVISIONING_PROFILE_SPECIFIER = adhoc_swallet;
-				SWIFT_OBJC_BRIDGING_HEADER = "MetaMask-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SWallet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1030,7 +1030,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MetaMask" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1039,7 +1039,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MetaMask" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
