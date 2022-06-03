@@ -98,7 +98,7 @@ const MetaMaskAnimation = ({
 MetaMaskAnimation.propTypes = {
   opacity: PropTypes.object,
   animation: PropTypes.object,
-  animationName: PropTypes.object,
+  // animationName: PropTypes.object,
   onAnimationFinish: PropTypes.func,
 };
 

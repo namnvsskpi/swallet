@@ -29,9 +29,8 @@ storiesOf('Getting Started', module).add('Introduction', () => {
       <Text>Welcome to the SWallet Mobile Storybook.</Text>
       <Title>Building Locally and Contributing</Title>
       <Text>
-        If you are looking to get a local build of SWallet Mobile up and
-        running or contribute to the mobile app codebase please read the
-        SWallet{' '}
+        If you are looking to get a local build of SWallet Mobile up and running
+        or contribute to the mobile app codebase please read the SWallet{' '}
         <Text link onPress={openMetaMaskMobileReadme}>
           README.md
         </Text>

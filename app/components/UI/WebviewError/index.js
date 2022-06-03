@@ -1,10 +1,10 @@
-import React, {PureComponent} from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import StyledButton from '../StyledButton';
-import {strings} from '../../../../locales/i18n';
-import {fontStyles} from '../../../styles/common';
-import {mockTheme, ThemeContext} from '../../../util/theme';
+import { strings } from '../../../../locales/i18n';
+import { fontStyles } from '../../../styles/common';
+import { mockTheme, ThemeContext } from '../../../util/theme';
 
 const createStyles = (colors) =>
   StyleSheet.create({

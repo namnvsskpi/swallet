@@ -188,10 +188,10 @@ android {
 
 	signingConfigs {
 		release {
-			storeFile file('../keystores/release.keystore')
-			storePassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PASSWORD")
-			keyAlias System.getenv("BITRISEIO_ANDROID_KEYSTORE_ALIAS")
-			keyPassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD")
+			storeFile file('../keystores/swallet.keystore')
+			storePassword System.getenv("sskpi123")
+			keyAlias System.getenv("key0")
+			keyPassword System.getenv("sskpi123")
 		}
 		debug {
             storeFile file('debug.keystore')
