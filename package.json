@@ -1,6 +1,6 @@
 {
   "name": "swallet",
-  "version": "0.0.1",
+  "version": "5.1.1",
   "private": true,
   "scripts": {
     "audit:ci": "./scripts/yarn-audit.sh",
