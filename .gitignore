@@ -3,6 +3,9 @@
 
 # xcode
 build/
+android/app/release/
+android/app/build/outputs/apk/*
+*.apk
 *.pbxuser
 !default.pbxuser
 *.mode1v3

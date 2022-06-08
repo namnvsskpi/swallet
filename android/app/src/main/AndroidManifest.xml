@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="io.metamask"
+	package="com.slab.swallet"
 	xmlns:tools="http://schemas.android.com/tools"
 >
 
