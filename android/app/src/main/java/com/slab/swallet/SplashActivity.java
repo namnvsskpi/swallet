@@ -1,4 +1,4 @@
-package io.metamask;
+package com.slab.swallet;
 
 import android.content.Intent;
 import android.os.Bundle;

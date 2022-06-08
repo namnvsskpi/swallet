@@ -157,7 +157,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
 	defaultConfig {
-		applicationId "io.metamask"
+		applicationId "com.slab.swallet"
 		minSdkVersion rootProject.ext.minSdkVersion
 		targetSdkVersion rootProject.ext.targetSdkVersion
 		versionCode 1
