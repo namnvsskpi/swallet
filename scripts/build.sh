@@ -13,6 +13,7 @@ PRE_RELEASE=false
 JS_ENV_FILE=".js.env"
 ANDROID_ENV_FILE=".android.env"
 IOS_ENV_FILE=".ios.env"
+METAMASK_ENVIRONMENT="production"
 
 envFileMissing() {
 	FILE="$1"
@@ -140,7 +141,7 @@ prebuild_android(){
 	yes | cp -rf app/core/InpageBridgeWeb3.js android/app/src/main/assets/.
 	# Copy fonts with iconset
 	yes | cp -rf ./app/fonts/Metamask.ttf ./android/app/src/main/assets/fonts/Metamask.ttf
-	
+
 	if [ "$PRE_RELEASE" = false ] ; then
 		if [ -e $ANDROID_ENV_FILE ]
 		then
@@ -213,8 +214,8 @@ buildIosReleaseE2E(){
 		echo "$IOS_ENV" | tr "|" "\n" > $IOS_ENV_FILE
 		echo "Pre-release E2E Build started..."
 		brew install watchman
-		cd ios 
-		generateArchivePackages 
+		cd ios
+		generateArchivePackages
 		# Generate sourcemaps
 		yarn sourcemaps:ios
 	else

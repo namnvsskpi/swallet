@@ -49,7 +49,7 @@ const main = async () => {
       imageModulesPath,
       `\n  ${isBlacklisted ? '//' : ''}'${
         token.logo
-      }': require('metamask/node_modules/@metamask/contract-metadata/images/${
+      }': require('swallet/node_modules/@metamask/contract-metadata/images/${
         token.logo
       }'),`,
     );
