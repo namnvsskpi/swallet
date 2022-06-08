@@ -157,11 +157,11 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
 	defaultConfig {
-		applicationId "io.metamask"
+		applicationId "com.slab.swallet"
 		minSdkVersion rootProject.ext.minSdkVersion
 		targetSdkVersion rootProject.ext.targetSdkVersion
-		versionCode 906
-		versionName "5.1.1"
+		versionCode 1
+		versionName "0.0.1"
 		multiDexEnabled true
 		testBuildType System.getProperty('testBuildType', 'debug')
 		missingDimensionStrategy "minReactNative", "minReactNative46"
@@ -188,10 +188,10 @@ android {
 
 	signingConfigs {
 		release {
-			storeFile file('../keystores/swallet.keystore')
-			storePassword System.getenv("sskpi123")
-			keyAlias System.getenv("key0")
-			keyPassword System.getenv("sskpi123")
+			      storeFile file('../keystores/swallet')
+            storePassword "sskpi123"
+            keyAlias "key0"
+            keyPassword "sskpi123"
 		}
 		debug {
             storeFile file('debug.keystore')
