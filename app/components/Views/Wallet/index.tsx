@@ -232,8 +232,8 @@ const Wallet = ({ navigation }: any) => {
           SWallet.decimals,
         );
       }
-      // // balance = renderFromWei(accounts[selectedAddress].balance);
-      // console.log(tokenBalances);
+      balance = renderFromWei(accounts[selectedAddress].balance);
+
       const totalToken: number = +renderFromTokenMinimalUnit(
         tokenBalances[SWallet.contract],
         +SWallet.decimals,
@@ -248,23 +248,24 @@ const Wallet = ({ navigation }: any) => {
         image: 'https://i.ibb.co/RgB8HR0/SCOIN.png',
         isERC721: false,
         symbol: SWallet.symbol,
-        balance,
+
         balanceFiat: `$${price.toFixed(2)}`,
       };
       assets = [
-        // {
-        //   name: 'Ether', // FIXME: use 'Ether' for mainnet only, what should it be for custom networks?
-        //   symbol: getTicker(ticker),
-        //   isETH: true,
-        //   balance,
-        //   balanceFiat: weiToFiat(
-        //     hexToBN(accounts[selectedAddress].balance) as any,
-        //     conversionRate,
-        //     currentCurrency,
-        //   ),
-        //   logo: '../images/eth-logo.png',
-        // },
         sToken,
+        {
+          name: 'Ether', // FIXME: use 'Ether' for mainnet only, what should it be for custom networks?
+          symbol: getTicker(ticker),
+          isETH: true,
+          balance,
+          balanceFiat: weiToFiat(
+            hexToBN(accounts[selectedAddress].balance) as any,
+            conversionRate,
+            currentCurrency,
+          ),
+          logo: '../images/eth-logo.png',
+        },
+
         // ...(tokens || []),
       ];
     } else {
