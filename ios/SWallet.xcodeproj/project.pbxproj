@@ -825,7 +825,7 @@
 				CODE_SIGN_ENTITLEMENTS = SWallet/SWalletDebug.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = ZU7RLX9Z47;
@@ -890,9 +890,9 @@
 				ASSETCATALOG_COMPILER_OPTIMIZATION = time;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SWallet/SWallet.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = ZU7RLX9Z47;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -940,7 +940,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.slab.swallet;
 				PRODUCT_NAME = SWallet;
-				PROVISIONING_PROFILE_SPECIFIER = developer_swallet;
+				PROVISIONING_PROFILE_SPECIFIER = adhoc_swallet;
 				SWIFT_OBJC_BRIDGING_HEADER = "SWallet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

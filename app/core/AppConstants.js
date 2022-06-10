@@ -30,8 +30,8 @@ export default {
   MM_UNIVERSAL_LINK_HOST: 'metamask.app.link',
   MM_DEEP_ITMS_APP_LINK: 'https://metamask.app.link/skAH3BaF99',
   SAI_ADDRESS: '0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359',
-  HOMEPAGE_URL: process.env.MM_HOMEPAGE || 'https://home.metamask.io/',
-  SHORT_HOMEPAGE_URL: 'MetaMask.io',
+  HOMEPAGE_URL: process.env.MM_HOMEPAGE || 'https://sskpi.com/',
+  SHORT_HOMEPAGE_URL: 'sskpi.com',
   ZERO_ADDRESS: '0x0000000000000000000000000000000000000000',
   USER_AGENT: Device.isAndroid()
     ? 'Mozilla/5.0 (Linux; Android 10; Android SDK built for x86 Build/OSM1.180201.023) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'
@@ -113,8 +113,8 @@ export default {
     SUPPORT: 'https://sskpi.com/eng/contact/',
   },
   BUNDLE_IDS: {
-    IOS: 'io.metamask.MetaMask',
-    ANDROID: 'io.metamask',
+    IOS: 'com.slab.swallet',
+    ANDROID: 'com.slab.swallet',
   },
   LEAST_SUPPORTED_ANDROID_API_LEVEL: 29,
 };

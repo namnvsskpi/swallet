@@ -41,10 +41,20 @@ const main = async () => {
   );
   await fs.appendFileSync(imageModulesPath, `\n/* eslint-disable */`);
   await fs.appendFileSync(imageModulesPath, `\n\nexport default {`);
+
+  const listNameLogo = [];
+
   for (let i = 0; i < cmKeys.length; i++) {
     const address = cmKeys[i];
     const token = contractMetadata[address];
     const isBlacklisted = blacklistedLogos[token.logo];
+
+    if (listNameLogo.includes(token.logo)) {
+      continue;
+    } else {
+      listNameLogo.push(token.logo);
+    }
+
     await fs.appendFileSync(
       imageModulesPath,
       `\n  ${isBlacklisted ? '//' : ''}'${

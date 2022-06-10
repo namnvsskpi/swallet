@@ -48,8 +48,8 @@ const createStyles = (colors) =>
       justifyContent: 'center',
     },
     animation: {
-      width: 110,
-      height: 110,
+      width: 300,
+      height: 300,
       alignSelf: 'center',
       alignItems: 'center',
       justifyContent: 'center',
@@ -229,15 +229,15 @@ class LockScreen extends PureComponent {
           source={require('../../../animations/fox-in.json')}
           onAnimationFinish={this.onAnimationFinished}
         />
-        <LottieView
-          // eslint-disable-next-line react/jsx-no-bind
-          ref={(animation) => {
-            this.animationName = animation;
-          }}
-          style={styles.metamaskName}
-          loop={false}
-          source={wordmark}
-        />
+        {/*<LottieView*/}
+        {/*  // eslint-disable-next-line react/jsx-no-bind*/}
+        {/*  ref={(animation) => {*/}
+        {/*    this.animationName = animation;*/}
+        {/*  }}*/}
+        {/*  style={styles.metamaskName}*/}
+        {/*  loop={false}*/}
+        {/*  source={wordmark}*/}
+        {/*/>*/}
       </View>
     );
   }
