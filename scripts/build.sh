@@ -108,9 +108,14 @@ checkParameters(){
 
 
 prebuild(){
+  echo 'prebuild 115'
 	# Import provider
 	cp node_modules/@metamask/mobile-provider/dist/index.js app/core/InpageBridgeWeb3.js
 	yarn --ignore-engines build:static-logos
+
+	echo $PRE_RELEASE
+
+	echo $JS_ENV_FILE
 
 	# Load JS specific env variables
 	if [ "$PRE_RELEASE" = false ] ; then
@@ -122,6 +127,7 @@ prebuild(){
 }
 
 prebuild_ios(){
+  echo 'prebuild_ios 127'
 	prebuild
 	# Generate xcconfig files for CircleCI
 	if [ "$PRE_RELEASE" = true ] ; then
@@ -134,6 +140,7 @@ prebuild_ios(){
 }
 
 prebuild_android(){
+  echo 'prebuild_android 139'
 	adb kill-server
 	adb start-server
 	prebuild
@@ -151,11 +158,13 @@ prebuild_android(){
 }
 
 buildAndroidRun(){
+  echo 'buildAndroidRun'
 	prebuild_android
 	react-native run-android
 }
 
 buildAndroidRunE2E(){
+  echo 'buildAndroidRunE2E'
 	prebuild_android
 	if [ -e $ANDROID_ENV_FILE ]
 	then
@@ -166,25 +175,30 @@ buildAndroidRunE2E(){
 }
 
 buildIosSimulator(){
+  echo 'buildIosSimulator'
 	prebuild_ios
 	react-native run-ios --simulator "iPhone 11 Pro"
 }
 
 buildIosSimulatorE2E(){
+  echo 'buildIosSimulatorE2E'
 	prebuild_ios
 	cd ios && xcodebuild -workspace MetaMask.xcworkspace -scheme MetaMask -configuration Debug -sdk iphonesimulator -derivedDataPath build
 }
 
 buildIosDevice(){
+  echo 'buildIosDevice'
 	prebuild_ios
 	react-native run-ios --device
 }
 
 generateArchivePackages() {
+  echo 'generateArchivePackages'
 	xcodebuild -workspace MetaMask.xcworkspace -scheme MetaMask -configuration Release COMIPLER_INDEX_STORE_ENABLE=NO archive -archivePath build/MetaMask.xcarchive -destination generic/platform=ios && xcodebuild -exportArchive -archivePath build/MetaMask.xcarchive -exportPath build/output -exportOptionsPlist MetaMask/IosExportOpitions.plist
 }
 
 buildIosRelease(){
+  echo 'buildIosRelease'
 	prebuild_ios
 
 	# Replace release.xcconfig with ENV vars
@@ -206,6 +220,7 @@ buildIosRelease(){
 }
 
 buildIosReleaseE2E(){
+  echo 'buildIosReleaseE2E'
 	prebuild_ios
 
 	# Replace release.xcconfig with ENV vars
@@ -223,11 +238,12 @@ buildIosReleaseE2E(){
 		if [ ! -f "ios/release.xcconfig" ] ; then
 			echo "$IOS_ENV" | tr "|" "\n" > ios/release.xcconfig
 		fi
-		cd ios && xcodebuild -workspace MetaMask.xcworkspace -scheme MetaMask -configuration Release -sdk iphonesimulator -derivedDataPath build
+    cd ios && xcodebuild -workspace SWallet.xcworkspace -scheme SWallet -configuration Release -destination generic/platform=iOS archive
 	fi
 }
 
 buildAndroidRelease(){
+  echo 'buildAndroidRelease'
 	if [ "$PRE_RELEASE" = false ] ; then
 		adb uninstall io.metamask || true
 	fi
@@ -254,11 +270,13 @@ buildAndroidRelease(){
 }
 
 buildAndroidReleaseE2E(){
+  echo 'buildAndroidReleaseE2E'
 	prebuild_android
 	cd android && ./gradlew assembleRelease assembleAndroidTest -PminSdkVersion=26 -DtestBuildType=release
 }
 
 buildAndroid() {
+  echo 'buildAndroid'
 	if [ "$MODE" == "release" ] ; then
 		buildAndroidRelease
 	elif [ "$MODE" == "releaseE2E" ] ; then
@@ -271,6 +289,7 @@ buildAndroid() {
 }
 
 buildIos() {
+  echo 'buildIos'
 	if [ "$MODE" == "release" ] ; then
 		buildIosRelease
 	elif [ "$MODE" == "releaseE2E" ] ; then
@@ -287,6 +306,7 @@ buildIos() {
 }
 
 startWatcher() {
+  echo 'startWatcher'
 	source $JS_ENV_FILE
 	yarn --ignore-engines build:static-logos
 	if [ "$MODE" == "clean" ]; then
@@ -299,6 +319,7 @@ startWatcher() {
 }
 
 checkAuthToken() {
+  echo 'checkAuthToken'
 	local propertiesFileName="$1"
 
 	if [ -n "${MM_SENTRY_AUTH_TOKEN}" ]; then
