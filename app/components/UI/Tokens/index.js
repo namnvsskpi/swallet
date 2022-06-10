@@ -176,17 +176,18 @@ class Tokens extends PureComponent {
 
     return (
       <View style={styles.footer} key={'tokens-footer'}>
-        <Text style={styles.emptyText}>
-          {strings('wallet.no_available_tokens')}
-        </Text>
-        <TouchableOpacity
-          style={styles.add}
-          onPress={this.goToAddToken}
-          disabled={!this.state.isAddTokenEnabled}
-          testID={'add-token-button'}
-        >
-          <Text style={styles.addText}>{strings('wallet.add_tokens')}</Text>
-        </TouchableOpacity>
+        {/* namnv*/}
+        {/*<Text style={styles.emptyText}>*/}
+        {/*  {strings('wallet.no_available_tokens')}*/}
+        {/*</Text>*/}
+        {/*<TouchableOpacity*/}
+        {/*  style={styles.add}*/}
+        {/*  onPress={this.goToAddToken}*/}
+        {/*  disabled={!this.state.isAddTokenEnabled}*/}
+        {/*  testID={'add-token-button'}*/}
+        {/*>*/}
+        {/*  <Text style={styles.addText}>{strings('wallet.add_tokens')}</Text>*/}
+        {/*</TouchableOpacity>*/}
       </View>
     );
   };

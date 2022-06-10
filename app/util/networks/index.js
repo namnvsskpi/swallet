@@ -7,6 +7,7 @@ import {
   RINKEBY,
   GOERLI,
   RPC,
+  BNBTEST,
 } from '../../../app/constants/network';
 import {
   NETWORK_ERROR_MISSING_NETWORK_ID,
@@ -76,6 +77,14 @@ const NetworkList = {
     color: '#f2f3f4',
     networkType: 'rpc',
   },
+  // [BNBTEST]: {
+  //   name: 'BNB Chain Network Test',
+  //   shortName: 'TBNB',
+  //   color: '#9e22ff',
+  //   networkType: 'rinkeby',
+  //   networkId: 97,
+  //   chainId: 97,
+  // },
 };
 
 const NetworkListKeys = Object.keys(NetworkList);

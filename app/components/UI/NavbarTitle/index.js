@@ -77,6 +77,7 @@ class NavbarTitle extends PureComponent {
   animating = false;
 
   openNetworkList = () => {
+    //namnv
     if (!this.props.disableNetwork) {
       if (!this.animating) {
         this.animating = true;
@@ -116,26 +117,26 @@ class NavbarTitle extends PureComponent {
         activeOpacity={this.props.disableNetwork ? 1 : 0.2}
         testID={'open-networks-button'}
       >
-        {title ? (
-          <Text numberOfLines={1} style={styles.title}>
-            {realTitle}
-          </Text>
-        ) : null}
-        <View style={styles.network}>
-          <View
-            style={[
-              styles.networkIcon,
-              color ? { backgroundColor: color } : styles.otherNetworkIcon,
-            ]}
-          />
-          <Text
-            numberOfLines={1}
-            style={styles.networkName}
-            testID={'navbar-title-network'}
-          >
-            {name}
-          </Text>
-        </View>
+        {/*{title ? (*/}
+        {/*  <Text numberOfLines={1} style={styles.title}>*/}
+        {/*    {realTitle}*/}
+        {/*  </Text>*/}
+        {/*) : null}*/}
+        {/*<View style={styles.network}>*/}
+        {/*  <View*/}
+        {/*    style={[*/}
+        {/*      styles.networkIcon,*/}
+        {/*      color ? { backgroundColor: color } : styles.otherNetworkIcon,*/}
+        {/*    ]}*/}
+        {/*  />*/}
+        {/*  <Text*/}
+        {/*    numberOfLines={1}*/}
+        {/*    style={styles.networkName}*/}
+        {/*    testID={'navbar-title-network'}*/}
+        {/*  >*/}
+        {/*    {name}*/}
+        {/*  </Text>*/}
+        {/*</View>*/}
       </TouchableOpacity>
     );
   };

@@ -350,10 +350,10 @@ if [ "$MODE" == "release" ] || [ "$MODE" == "releaseE2E" ]; then
 		echo "RELEASE SENTRY PROPS"
  		checkAuthToken 'sentry.release.properties'
  		export SENTRY_PROPERTIES="${REPO_ROOT_DIR}/sentry.release.properties"
- 	else
-	 	echo "DEBUG SENTRY PROPS"
- 		checkAuthToken 'sentry.debug.properties'
- 		export SENTRY_PROPERTIES="${REPO_ROOT_DIR}/sentry.debug.properties"
+# 	else
+#	 	echo "DEBUG SENTRY PROPS"
+# 		checkAuthToken 'sentry.debug.properties'
+# 		export SENTRY_PROPERTIES="${REPO_ROOT_DIR}/sentry.debug.properties"
  	fi
 
 

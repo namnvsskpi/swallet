@@ -6,3 +6,4 @@ export const GOERLI = 'goerli';
 export const RPC = 'rpc';
 export const NO_RPC_BLOCK_EXPLORER = 'NO_BLOCK_EXPLORER';
 export const PRIVATENETWORK = 'PRIVATENETWORK';
+export const BNBTEST = 'BNBTEST';

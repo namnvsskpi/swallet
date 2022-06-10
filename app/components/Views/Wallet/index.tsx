@@ -1,42 +1,45 @@
 import React, {
+  useCallback,
+  useContext,
   useEffect,
   useRef,
   useState,
-  useCallback,
-  useContext,
 } from 'react';
 import {
+  ActivityIndicator,
+  InteractionManager,
   RefreshControl,
   ScrollView,
-  InteractionManager,
-  ActivityIndicator,
   StyleSheet,
   View,
 } from 'react-native';
 import { useSelector } from 'react-redux';
-import ScrollableTabView from 'react-native-scrollable-tab-view';
 import DefaultTabBar from 'react-native-scrollable-tab-view/DefaultTabBar';
-import { fontStyles, baseStyles } from '../../../styles/common';
+import { baseStyles, fontStyles } from '../../../styles/common';
 import AccountOverview from '../../UI/AccountOverview';
 import Tokens from '../../UI/Tokens';
 import { getWalletNavbarOptions } from '../../UI/Navbar';
 import { strings } from '../../../../locales/i18n';
-import { renderFromWei, weiToFiat, hexToBN } from '../../../util/number';
+import { hexToBN, renderFromWei, weiToFiat } from '../../../util/number';
 import Engine from '../../../core/Engine';
-import CollectibleContracts from '../../UI/CollectibleContracts';
 import Analytics from '../../../core/Analytics';
 import { ANALYTICS_EVENT_OPTS } from '../../../util/analytics';
-import { getTicker } from '../../../util/transactions';
 import OnboardingWizard from '../../UI/OnboardingWizard';
 import ErrorBoundary from '../ErrorBoundary';
 import { DrawerContext } from '../../Nav/Main/MainNavigator';
-import { useAppThemeFromContext, mockTheme } from '../../../util/theme';
+import { mockTheme, useAppThemeFromContext } from '../../../util/theme';
+import SWallet from '../../../constants/address';
+import AnalyticsV2 from '../../../util/analyticsV2';
+import Networks from '../../../util/networks';
+import { RINKEBY } from '../../../constants/network';
+import { getTicker } from '../../../util/transactions';
 
 const createStyles = (colors: any) =>
   StyleSheet.create({
     wrapper: {
       flex: 1,
       backgroundColor: colors.background.default,
+      // height: 600,
     },
     tabUnderlineStyle: {
       height: 2,
@@ -70,6 +73,8 @@ const Wallet = ({ navigation }: any) => {
   const accountOverviewRef = useRef(null);
   const { colors } = useAppThemeFromContext() || mockTheme;
   const styles = createStyles(colors);
+  const { TokensController, NetworkController, CurrencyRateController } =
+    Engine.context;
   /**
    * Map of accounts to information objects including balances
    */
@@ -209,24 +214,46 @@ const Wallet = ({ navigation }: any) => {
     let balance: any = 0;
     let assets = tokens;
 
-
-
     if (accounts[selectedAddress]) {
-      balance = renderFromWei(accounts[selectedAddress].balance);
+      if (!assets.find((asset: any) => asset?.address === SWallet.contract)) {
+        TokensController.addToken(
+          SWallet.contract,
+          SWallet.symbol,
+          SWallet.decimals,
+        );
+      }
+      // balance = renderFromWei(accounts[selectedAddress].balance);
+      const balanceFiat = weiToFiat(
+        hexToBN(accounts[selectedAddress].balance) as any,
+        conversionRate,
+        currentCurrency,
+      );
+      const sToken = {
+        name: 'SCOIN',
+        address: SWallet.contract,
+        balanceError: null,
+        decimals: SWallet.decimals,
+        image: 'https://i.ibb.co/RgB8HR0/SCOIN.png',
+        isERC721: false,
+        symbol: SWallet.symbol,
+        balance,
+        balanceFiat,
+      };
       assets = [
-        {
-          name: 'Ether', // FIXME: use 'Ether' for mainnet only, what should it be for custom networks?
-          symbol: getTicker(ticker),
-          isETH: true,
-          balance,
-          balanceFiat: weiToFiat(
-            hexToBN(accounts[selectedAddress].balance) as any,
-            conversionRate,
-            currentCurrency,
-          ),
-          logo: '../images/eth-logo.png',
-        },
-        ...(tokens || []),
+        // {
+        //   name: 'Ether', // FIXME: use 'Ether' for mainnet only, what should it be for custom networks?
+        //   symbol: getTicker(ticker),
+        //   isETH: true,
+        //   balance,
+        //   balanceFiat: weiToFiat(
+        //     hexToBN(accounts[selectedAddress].balance) as any,
+        //     conversionRate,
+        //     currentCurrency,
+        //   ),
+        //   logo: '../images/eth-logo.png',
+        // },
+        sToken,
+        // ...(tokens || []),
       ];
     } else {
       assets = tokens;
@@ -245,38 +272,25 @@ const Wallet = ({ navigation }: any) => {
           navigation={navigation}
           onRef={onRef}
         />
-        <ScrollableTabView
-          renderTabBar={renderTabBar}
-          // eslint-disable-next-line react/jsx-no-bind
-          onChangeTab={onChangeTab}
-        >
-          <Tokens
-            tabLabel={strings('wallet.tokens')}
-            key={'tokens-tab'}
-            navigation={navigation}
-            tokens={assets}
-          />
-          <CollectibleContracts
-            tabLabel={strings('wallet.collectibles')}
-            key={'nfts-tab'}
-            navigation={navigation}
-          />
-        </ScrollableTabView>
+        <Tokens
+          tabLabel={strings('wallet.tokens')}
+          key={'tokens-tab'}
+          navigation={navigation}
+          tokens={assets}
+        />
       </View>
     );
   }, [
-    renderTabBar,
+    tokens,
     accounts,
+    selectedAddress,
+    identities,
+    styles.wrapper,
+    navigation,
+    onRef,
     conversionRate,
     currentCurrency,
-    identities,
-    navigation,
-    onChangeTab,
-    onRef,
-    selectedAddress,
-    ticker,
-    tokens,
-    styles,
+    TokensController,
   ]);
 
   const renderLoader = useCallback(
@@ -301,6 +315,15 @@ const Wallet = ({ navigation }: any) => {
       ),
     [navigation, wizardStep],
   );
+
+  useEffect(() => {
+    CurrencyRateController.setNativeCurrency('STOKEN');
+    NetworkController.setProviderType(RINKEBY);
+
+    setTimeout(() => {
+      Engine.refreshTransactionHistory();
+    }, 1000);
+  }, []);
 
   return (
     <ErrorBoundary view="Wallet">

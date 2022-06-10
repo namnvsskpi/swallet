@@ -186,7 +186,7 @@ class AccountList extends PureComponent {
         const allKeyrings =
           keyrings && keyrings.length
             ? keyrings
-            : Engine.context.KeyringController.state.keyrings;
+            : Engine?.context?.KeyringController?.state?.keyrings;
         const accountsOrdered = allKeyrings.reduce(
           (list, keyring) => list.concat(keyring.accounts),
           [],
