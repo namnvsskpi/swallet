@@ -208,6 +208,9 @@ const Wallet = ({ navigation }: any) => {
   const renderContent = useCallback(() => {
     let balance: any = 0;
     let assets = tokens;
+
+
+
     if (accounts[selectedAddress]) {
       balance = renderFromWei(accounts[selectedAddress].balance);
       assets = [
@@ -228,6 +231,7 @@ const Wallet = ({ navigation }: any) => {
     } else {
       assets = tokens;
     }
+
     const account = {
       address: selectedAddress,
       ...identities[selectedAddress],
