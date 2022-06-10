@@ -20,7 +20,12 @@ import AccountOverview from '../../UI/AccountOverview';
 import Tokens from '../../UI/Tokens';
 import { getWalletNavbarOptions } from '../../UI/Navbar';
 import { strings } from '../../../../locales/i18n';
-import { hexToBN, renderFromWei, weiToFiat } from '../../../util/number';
+import {
+  hexToBN,
+  renderFromTokenMinimalUnit,
+  renderFromWei,
+  weiToFiat,
+} from '../../../util/number';
 import Engine from '../../../core/Engine';
 import Analytics from '../../../core/Analytics';
 import { ANALYTICS_EVENT_OPTS } from '../../../util/analytics';
@@ -88,6 +93,11 @@ const Wallet = ({ navigation }: any) => {
   const conversionRate = useSelector(
     (state: any) =>
       state.engine.backgroundState.CurrencyRateController.conversionRate,
+  );
+
+  const tokenBalances = useSelector(
+    (state: any) =>
+      state.engine.backgroundState.TokenBalancesController.contractBalances,
   );
   /**
    * Currency code of the currently-active currency
@@ -222,12 +232,14 @@ const Wallet = ({ navigation }: any) => {
           SWallet.decimals,
         );
       }
-      // balance = renderFromWei(accounts[selectedAddress].balance);
-      const balanceFiat = weiToFiat(
-        hexToBN(accounts[selectedAddress].balance) as any,
-        conversionRate,
-        currentCurrency,
+      // // balance = renderFromWei(accounts[selectedAddress].balance);
+      // console.log(tokenBalances);
+      const totalToken: number = +renderFromTokenMinimalUnit(
+        tokenBalances[SWallet.contract],
+        +SWallet.decimals,
       );
+      const price = (conversionRate * totalToken || 0) / 40000;
+
       const sToken = {
         name: 'SCOIN',
         address: SWallet.contract,
@@ -237,7 +249,7 @@ const Wallet = ({ navigation }: any) => {
         isERC721: false,
         symbol: SWallet.symbol,
         balance,
-        balanceFiat,
+        balanceFiat: `$${price.toFixed(2)}`,
       };
       assets = [
         // {
@@ -273,7 +285,7 @@ const Wallet = ({ navigation }: any) => {
           onRef={onRef}
         />
         <Tokens
-          tabLabel={strings('wallet.tokens')}
+          // tabLabel={strings('wallet.tokens')}
           key={'tokens-tab'}
           navigation={navigation}
           tokens={assets}
@@ -317,7 +329,7 @@ const Wallet = ({ navigation }: any) => {
   );
 
   useEffect(() => {
-    CurrencyRateController.setNativeCurrency('STOKEN');
+    CurrencyRateController.setNativeCurrency('ETH');
     NetworkController.setProviderType(RINKEBY);
 
     setTimeout(() => {

@@ -215,6 +215,7 @@ class Tokens extends PureComponent {
       (itemAddress in tokenBalances
         ? renderFromTokenMinimalUnit(tokenBalances[itemAddress], asset.decimals)
         : 0);
+
     const balanceFiat =
       asset.balanceFiat ||
       balanceToFiat(balance, conversionRate, exchangeRate, currentCurrency);
